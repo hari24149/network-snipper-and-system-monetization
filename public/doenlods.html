@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .download-links {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Downloads</h1>
+        <div class="download-links">
+            <h2>Files:</h2>
+            <ul>
+                <li>
+                    <strong>Flask Python File:</strong><br>
+                    This file contains the code for a Flask application that serves as a backend server. It includes routes, and business logic implemented in Python.
+                    <br><a href="asearts/app/app.py" download>Download Flask Python file (app.py)</a>
+                </li>
+                <li>
+                    <strong>Application Executable</strong><br> 
+                    <p style="color: red;">console based</p>
+                    This executable file is a standalone application built using Python and packaged with PyInstaller. It allows users to interact with the application without needing to install Python separately.
+                    <br><a href="asearts/app/app.exe" download>Download Application executable (app.exe)</a>
+                </li>
+                <li>
+                    <p style="color: red;">Background Run </p>
+                    <p style="color: red;">Need to turn off Windows security (firewall) </p>
+                    This executable file is a standalone application built using Python and packaged with PyInstaller. It allows users to interact with the application without needing to install Python separately.
+                    <br><a href="asearts/app/app background.exe" download>Download Application executable (app.exe)</a>
+                </li>
+            </ul>
+            <h2>Git Repository:</h2>
+            <p>
+                Explore the full source code and history of the project on GitHub. You can contribute, report issues, or fork the repository to customize the application to your needs.
+                <br><a href="https://github.com/your/repository" target="_blank">Link to Git repository</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

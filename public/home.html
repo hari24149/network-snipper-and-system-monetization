@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler bg-white border-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-5 ">
+                    <a class="nav-link active text-white" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link active text-white " href="#">About</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link active text-white" href="inst.html">Instruction</a>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link active text-white" href="index.html">Get Started</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="ip">
+  <p>Connected IP: <span id="connected-ip" style="color: red;">Not set</span></p>
+    <!-- <button id="change-ip-btn">Change IP Address</button> -->
+    <button class="btn-53" id="change-ip-btn">
+      <div class="original">Change Ip</div>
+      <div class="letters">
+        
+        <span>N</span>
+        <span>E</span>
+        <span>W</span>
+        <span>_</span>
+        <span>I</span>
+        <span>P</span>
+      </div>
+    </button>
+    
+</div>
+    <div class="main_body">
+
+        <div class="card">
+            <div class="header"><img src="./asearts/chrome.webp" alt="" srcset="" width="100%"; height="80%";></div>
+            <div class="info">
+              <p class="title">Browser History</p>
+              <p>Give in a organized manner to understand the usage of the browser</p>
+            </div>
+            <div class="footer">
+              <button type="button" class="action" onclick="chrhis()">Fetch</button>
+            </div>
+        </div>
+
+        <div class="card">
+          <div class="header"><img src="./asearts/Network-Sniffer.jpg" alt="" srcset="" width="100%"; height="90%";></div>
+          <div class="info">
+            <p class="title">Network Sniffer</p>
+            <p>
+              It used to capture and analyze data packets traveling through a network.monitoring network traffic & enhancing security </p>
+          </div>
+          <div class="footer">
+            <button type="button" class="action" onclick="sniff()">Capture </button>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="header"><img src="./asearts/scrap-web.png" alt="" srcset="" width="100%"; height="100%";></div>
+        <div class="info">
+          <p class="title">Web scraping</p>
+          <p>It makes automatically extract data from websites. gathering large amounts of information quickly and efficiently for various purposes such as research, analysis </p>
+        </div>
+        <div class="footer">
+          <button type="button" class="action" onclick="scrape()">Scrape</button>
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="header"><img src="./asearts/cpu.jpg" alt="" srcset="" width="100%"; height="100%";></div>
+      <div class="info">
+        <p class="title">Resource Management</p>
+        <p>resource management monitors and optimizes the computer's hardware. It helps ensure efficient performance by tracking CPU, memory, disk, and network usage
+        </p>
+      </div>
+      <div class="footer">
+        <button type="button" class="action" onclick="res()">View</button>
+      </div>
+  </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

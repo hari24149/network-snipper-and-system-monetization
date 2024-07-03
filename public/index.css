@@ -1,0 +1,369 @@
+/* 
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+nav li
+{
+    list-style: none;
+    font-size: 2rem;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    
+}
+nav a::before {
+    margin-left: auto;
+  }
+  
+nav a::after, a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+  }
+  
+nav a:hover::after, a:hover::before {
+    width: 100%;
+  }
+nav{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.main
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding: 5%;
+    width: 70rem;
+}
+
+
+
+
+
+.cssbuttons-io-button {
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    border-radius: 10em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 0 0 1.6em rgba(183, 33, 255,0.3),0 0 1.6em hsla(191, 98%, 56%, 0.3);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 10em;
+    right: 0.3em;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #B721FF;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.9);
+  }
+  
+  a{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+a::before {
+  margin-left: auto;
+}
+
+a::after, a::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+
+a:hover::after, a:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   */
+
+
+/* styles.css */
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('asearts/bg4.avif'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+nav li {
+  list-style: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: 600;
+}
+
+nav a::before {
+  margin-left: auto;
+}
+
+nav a::after, nav a::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+
+nav a:hover::after, nav a:hover::before {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  padding: 5%;
+  max-width: 70rem;
+}
+
+.cssbuttons-io-button {
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  border-radius: 10em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  box-shadow: 0 0 1.6em rgba(183, 33, 255,0.3),0 0 1.6em hsla(191, 98%, 56%, 0.3);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 10em;
+  right: 0.3em;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #B721FF;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.9);
+}
+
+@media (max-width: 1200px) {
+  .main {
+      max-width: 50rem;
+      padding: 3%;
+  }
+
+  h1 {
+      font-size: 50px;
+  }
+
+  h2 {
+      font-size: 35px;
+  }
+
+  p {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+      gap: 3rem;
+      padding: 0.5rem;
+  }
+
+  nav li {
+      font-size: 1.5rem;
+  }
+
+  nav a {
+      font-size: 20px;
+  }
+
+  .main {
+      max-width: 100%;
+      padding: 2%;
+  }
+
+  h1 {
+      font-size: 40px;
+  }
+
+  h2 {
+      font-size: 30px;
+  }
+
+  p {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+  }
+
+  .main {
+      padding: 1rem;
+  }
+
+  h1 {
+      font-size: 30px;
+  }
+
+  h2 {
+      font-size: 25px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  .cssbuttons-io-button {
+      font-size: 14px;
+      height: 2.4em;
+  }
+
+  .cssbuttons-io-button .icon {
+      height: 2em;
+      width: 2em;
+  }
+}

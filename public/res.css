@@ -1,0 +1,160 @@
+body {
+    background-image: url('asearts/bg3.jpg'); 
+    background-size: cover; 
+}
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav li
+{
+    list-style: none;
+    font-size: 90%;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    border: none;
+    background: none;
+    font-weight: 600;
+}
+nav a::before {
+    margin-left: auto;
+  }
+  
+nav a::after, a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+  }
+  
+nav a:hover::after, a:hover::before {
+    width: 100%;
+  }
+
+
+
+
+.chart_div
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+
+
+.containerb{
+  display: flex;
+    text-align: center;
+    justify-content: center;
+    background: transparent;
+    color: white;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 7px;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 1em 2em;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+
+.terminal {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  width: 100%;
+  max-width: 800px;
+  height: 400px; /* Set a fixed height for the terminal */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.output {
+  flex-grow: 1;
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+  overflow-y: auto; /* Enable scrolling for the output */
+  max-height: 3000px; /* Limit the max height for the output area */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+scrollbar-width: none;
+}
+
+.input {
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  resize: none;
+  height: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  
+}
+.titles {
+  color: white;
+  display: flex;
+  align-items: center; /* Removed the duplicate align-items property */
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 3% 10%;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for glass effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+              0 1px 3px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+  backdrop-filter: blur(10px); /* Blur effect to enhance glass look */
+  border-radius: 10px; /* Rounded corners for a smoother appearance */
+}
+
+
+
+
+.storage-info {
+  margin: 20px 0;
+  font-size: 100%;
+}
+.storage-info h2 {
+  margin-bottom: 10px;
+}

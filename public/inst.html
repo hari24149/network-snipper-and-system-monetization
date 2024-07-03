@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Setup Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background: #f4f4f9;
+            border-left: 3px solid #007BFF;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            background: #fffbcc;
+            padding: 10px;
+            border-left: 3px solid #ffeb3b;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab.active {
+            border-bottom: 3px solid #007BFF;
+            font-weight: bold;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1, h2 {
+                font-size: 1.5em;
+            }
+
+            ul, ol {
+                padding: 0 10px;
+            }
+
+            .tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tab {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Application Setup Instructions</h1>
+        <div class="tabs">
+            <div class="tab active" data-content="node-flask">Node.js & Flask App</div>
+        </div>
+
+        <div id="node-flask" class="content active">
+            <h2>Setup Instructions</h2>
+
+            <h3>Step 1: Download the Node.js Application</h3>
+            <ul>
+                <li>Ensure you have Node.js installed. You can download it from <a href="https://nodejs.org/en/download/" target="_blank">Node.js official website</a>.</li>
+                <li>Ensure you have Git installed. You can download it from <a href="https://github.com/hari24149/network-snipper-and-system-monetization" target="_blank">Git official website</a>.</li>
+                <li>Clone the Node.js application repository from GitHub:
+                    <pre><code>git clone https://github.com/hari24149/network-snipper-and-system-monetization</code></pre>
+                </li>
+                <li>Navigate to the cloned directory:
+                    <pre><code>cd node-app</code></pre>
+                </li>
+                <li>Install the required dependencies:
+                    <pre><code>npm install</code></pre>
+                </li>
+                <li>Start the Node.js application:
+                    <pre><code>npm start</code></pre>
+                </li>
+            </ul>
+
+            <h3>Step 2: Download and Setup the Flask Application</h3>
+            <ul>
+                <li>Ensure you have Python installed. You can download it from <a href="https://www.python.org/downloads/" target="_blank">Python official website</a>.</li>
+                <li>Download the Flask application from the following link: 
+                    <a href="http://localhost:3000/index.html#" target="_blank">Download Flask App</a>
+                </li>
+                <li>Extract the downloaded zip file to a directory of your choice.</li>
+                <li>Open a Command Prompt as Administrator:
+                    <ul>
+                        <li>Search for "cmd" in the Windows Start Menu.</li>
+                        <li>Right-click on "Command Prompt" and select "Run as administrator".</li>
+                    </ul>
+                </li>
+                <li>Navigate to the extracted directory in the Command Prompt:
+                    <pre><code>cd path\to\your\flask-app</code></pre>
+                </li>
+                <li>Create a virtual environment and activate it:
+                    <pre><code>python -m venv venv
+venv\Scripts\activate</code></pre>
+                </li>
+                <li>Install the required dependencies:
+                    <pre><code>pip install -r requirements.txt</code></pre>
+                </li>
+                <li>Run the Flask application:
+                    <pre><code>python app.py</code></pre>
+                </li>
+            </ul>
+
+            <div class="note">
+                <strong>Note:</strong> Running the command prompt as an administrator is essential for certain operations that require elevated permissions.
+            </div>
+
+            <h3>Accessing the Applications</h3>
+            <p>Once the Node.js application is running, open your browser and go to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to access it. From there, you can start the Flask application and view its interface.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.content).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

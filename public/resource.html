@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>system monetring</title>
+    <link rel="stylesheet" href="res.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler bg-white border-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-5 ">
+                        <a class="nav-link active text-white" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link active text-white " href="#">About</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link active text-white" href="#">Documentary</a>
+                    </li>
+                    <li class="nav-item me-5">
+                      <a class="nav-link active text-white" href="index.html">Get Started</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="titles">
+        <h1>System Monetring and Optimize</h1>
+        <p style="color: white; font-size:20px;">
+            system monitoring dashboard displaying memory, CPU, network usage, and detailed storage information. It includes a "Clean Temporary Files" button for freeing up space and a web terminal for direct command-line interactions.Makes not interaction
+         </p>
+      </div>
+    <div class="chart_div">
+    <div id="chart_div" style="width: 400px; height: 120px;"></div>
+</div>
+<div style="display: flex; align-items: center; flex-direction: row; gap: 30px; flex-wrap:wrap ; justify-content: center;">
+    <div class="containerb">
+        <div class="storage-info">
+            <h1>Storage Information</h1>
+            <p>Total Storage: <span id="total"></span></p>
+            <p>Used Storage: <span id="used"></span></p>
+            <p>Free Storage: <span id="free"></span></p>
+            <p>Percentage Used: <span id="percent"></span></p>
+        </div>
+    </div>
+<div class="containerb">
+    <h1>Clean Temporary Files</h1>
+    <button id="clean-button">Clean</button>
+    <div id="result"></div>
+</div>
+</div>
+<hr>
+<div style="display: flex; align-items: center; justify-content: center;">
+<div class="terminal">
+    <pre class="output" id="output">Welcome to the Web Terminal\n$ </pre>
+    <textarea id="commandInput" class="input" autofocus></textarea>
+</div>
+</div>
+    <script src="res.js"></script>
+</body>
+</html>
